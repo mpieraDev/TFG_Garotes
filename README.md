@@ -23,7 +23,7 @@ Its electronic infrastructure is optimized to reduce investment, offering an eff
 
 ### LinkedIn Post
 
-[LinkedIn Post](https://www.linkedin.com/feed/update/urn:li:activity:7356992431638126592/)
+[Post](https://www.linkedin.com/feed/update/urn:li:activity:7356992431638126592/)
 
 # Installation
 
