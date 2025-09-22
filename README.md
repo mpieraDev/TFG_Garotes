@@ -103,11 +103,40 @@ This architecture allows the mobile device to communicate indirectly with the dr
   - Nombre: **ArduinoBLE**.  
 
 
-### Setup in Arduino IDE
+### ⚙️ Setup in Arduino IDE
 
-1. Open **Arduino IDE**.
-2. Add support for **Arduino Nano RP2040 Connect** via the Board Manager.
-3. Install the required libraries (depending on the firmware, such as **WiFiNINA**, **ArduinoBLE**, etc.).
+1. **Install Arduino IDE**  
+   - Download from the official website: [Arduino IDE](https://www.arduino.cc/en/software).  
+   - Make sure it is correctly installed and that you can open it without issues.
 
-With this, you can compile and upload the firmware to the Arduino so it communicates with the Flutter app via Bluetooth.
+2. **Add support for Arduino Nano RP2040 Connect**  
+   - Open Arduino IDE → *Tools* → *Board* → *Boards Manager...*  
+   - Search for **Arduino Mbed OS RP2040 Boards** and install it.  
+   - After installation, select **Arduino Nano RP2040 Connect** as your board.
+
+3. **Install the required libraries**  
+   From the *Library Manager* (Sketch → Include Library → Manage Libraries...), install:  
+   - **RF24** (by TMRh20) → for the nRF24L01 radio modules.  
+   - **ArduinoBLE** (by Arduino) → for Bluetooth communication (used in the Tx unit).  
+   - Standard libraries like **SPI** are already included.
+
+4. **Compile the firmware**  
+   - Open the provided `.ino` file (for Tx or Rx).  
+   - Click the **✓ Verify** button in Arduino IDE to compile and confirm there are no errors.
+
+5. **Upload the firmware**  
+   - Connect your **Arduino Nano RP2040 Connect** via USB.  
+   - Select the correct port under *Tools → Port*.  
+   - Click **→ Upload** to flash the firmware to the board.
+
+6. **Hardware requirements**  
+   - You need **two nRF24L01 antennas (minimum)**:  
+     - One connected to the **Tx (ground station)**.  
+     - One connected to the **Rx (drone)**.  
+   - These modules handle the long-range radio communication between drone and ground.
+
+7. **Wiring diagram reference**  
+   You can refer to the wiring diagram provided by the RF24 library’s documentation to see how to connect the nRF24L01 modules:  
+   [RF24 Wiring Diagram — RF24 Library Documentation](https://nrf24.github.io/RF24/)  
+
 
