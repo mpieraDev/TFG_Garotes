@@ -27,7 +27,7 @@ Its electronic infrastructure is optimized to reduce investment, offering an eff
 
 This project contains two main parts: a **Flutter app** and an **Arduino firmware**.
 
-## Flutter Part
+## Flutter App
 
 ### 1. Install Flutter
 
@@ -73,7 +73,7 @@ flutter run
 * **Android**: tested on real devices.
 
 
-## Arduino Part
+## Arduino 
 
 ### Microcontroller used
 
