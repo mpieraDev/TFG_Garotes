@@ -11,3 +11,89 @@ The developed system consists of three main components:
 • A mobile application, from which the operator can control the drone, view telemetry, and access the collected data, all in real time.
 
 The system enables operation in hard-to-reach areas with a range greater than 1 km and an autonomy of 6 hours, and its electronic infrastructure is optimized to reduce investment, offering an efficient and economical alternative to conventional bathymetric methods.
+
+## Instalation
+
+This project contains two main parts: a **Flutter app** and an **Arduino firmware**.
+
+---
+
+## 📱 Flutter Part
+
+### 1. Install Flutter
+
+If you don’t have Flutter installed:
+
+1. Download Flutter from the official website: [Flutter Installation](https://docs.flutter.dev/get-started/install)
+2. Add Flutter to your system `PATH`.
+3. Verify installation:
+
+   ```bash
+   flutter --version
+   flutter doctor
+   ```
+
+   Make sure all checks from `flutter doctor` pass.
+
+### 2. Clone the repository
+
+```bash
+git clone https://github.com/mpieraDev/TFG_Garotes.git
+cd TFG_Garotes/Flutter/demo_app
+```
+
+### 3. Install dependencies
+
+```bash
+flutter pub get
+```
+
+### 4. Run the app
+
+> ⚠️ **Important:** the app uses **Bluetooth to connect to the Arduino**, so it **will not work on emulators**. You must run it on a **real mobile device**.
+
+Run:
+
+```bash
+flutter run
+```
+
+### 5. Compatibility
+
+* **iOS**: tested on real devices.
+* **Android**: not tested yet.
+
+---
+
+## 🔧 Arduino Part
+
+### Microcontroller used
+
+* **Arduino Nano RP2040 Connect**
+
+### Setup in Arduino IDE
+
+1. Open **Arduino IDE**.
+2. Add support for **Arduino Nano RP2040 Connect** via the Board Manager.
+3. Install the required libraries (depending on the firmware, such as **WiFiNINA**, **ArduinoBLE**, etc.).
+
+With this, you can compile and upload the firmware to the Arduino so it communicates with the Flutter app via Bluetooth.
+
+---
+
+## ⚡ Quick summary
+
+```bash
+# Flutter
+flutter --version
+flutter doctor
+git clone https://github.com/mpieraDev/TFG_Garotes.git
+cd TFG_Garotes/Flutter/demo_app
+flutter pub get
+flutter run   # on real mobile device (not emulator)
+
+# Arduino
+# - Install support for Arduino Nano RP2040 Connect in the IDE
+# - Install required libraries
+# - Upload the firmware
+```
