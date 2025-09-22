@@ -3,22 +3,19 @@
 The project is situated within **Garotes**, an initiative by *Spascat* to generate bathymetric maps in hard-to-reach coastal areas using satellite-derived bathymetry algorithms.  
 To calibrate them, a small amount of real bathymetric data is needed. The challenge was that the company did not have its own method to collect this data autonomously, economically, and efficiently.
 
----
 
 ### The solution
 We designed a complete, accessible, and scalable system for collecting real bathymetric data in complex environments, minimizing costs and resources.  
 This is a marine surface vehicle controlled via radio, with integrated sonar and controllable from a mobile device application developed specifically for the project.
 
----
 
 ### System components
 The developed system consists of three main components:
 
 - **Marine surface drone**: a radio-controlled vehicle equipped with sonar, responsible for data collection.  
 - **Intermediate communication module**: links the vehicle with the mobile device using a custom long-range radiofrequency protocol and Bluetooth Low Energy (BLE).  
-- **Mobile application**: from which the operator can control the drone, view telemetry, and access the collected data, all in real time.  
-
----
+- **Mobile application**: from which the operator can control the drone, view telemetry, and access the collected data, all in real time.
+  
 
 ### Capabilities
 The system enables operation in hard-to-reach areas with a range greater than **1 km** and an autonomy of **6 hours**.  
