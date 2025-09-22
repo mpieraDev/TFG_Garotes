@@ -77,15 +77,32 @@ flutter run
 
 ### Microcontroller used
 
-* **Arduino Nano RP2040 Connect**
+The system uses two **Arduino Nano RP2040 Connect** boards with different roles:
 
-The system uses two Arduino Nano RP2040 Connect boards:
+- **Tx (Transmitter / Ground Station)**: located on the ground, this module connects to the mobile device via **Bluetooth Low Energy (BLE)**.  
+  It sends requests to the drone asking for specific data packets.  
 
-Tx (Transmitter): placed on the marine drone, equipped with sonar, and responsible for collecting and transmitting the bathymetric data via long-range radiofrequency.
+- **Rx (Receiver / Drone)**: located on the marine drone, this module listens to the requests from the Tx on the ground and responds by sending back the requested data packets.  
 
-Rx (Receiver): placed outside the drone, it receives the transmitted data from the Tx module and then forwards it to the mobile device using Bluetooth Low Energy (BLE).
+This architecture allows the mobile device to communicate indirectly with the drone through the Tx module on the ground, ensuring long-range operation while still using BLE for the mobile app connection.
 
-This separation allows the drone to operate at long range while the Rx module bridges the data securely to the Flutter mobile application.
+
+### Librerías necesarias
+
+####  Comunes (Tx y Rx)
+- **Arduino core** (incluye `Arduino.h`) → ya viene con el IDE.  
+- **printf.h** → no es una librería externa, viene como utilitario en algunos ejemplos de RF24, normalmente se incluye junto con la librería RF24.  
+- **SPI** → librería estándar, ya incluida con Arduino.  
+- **RF24** → esta sí tienes que instalarla desde el Library Manager:  
+  - Autor: **TMRh20**  
+  - Nombre: **RF24** (para módulos nRF24L01).  
+
+#### Solo en Tx
+- **avr/dtostrf.h** → viene con el core AVR, no necesitas instalar nada.  
+- **ArduinoBLE** → sí hay que instalarla desde el Library Manager:  
+  - Autor: **Arduino**  
+  - Nombre: **ArduinoBLE**.  
+
 
 ### Setup in Arduino IDE
 
