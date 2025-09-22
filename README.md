@@ -79,6 +79,14 @@ flutter run
 
 * **Arduino Nano RP2040 Connect**
 
+The system uses two Arduino Nano RP2040 Connect boards:
+
+Tx (Transmitter): placed on the marine drone, equipped with sonar, and responsible for collecting and transmitting the bathymetric data via long-range radiofrequency.
+
+Rx (Receiver): placed outside the drone, it receives the transmitted data from the Tx module and then forwards it to the mobile device using Bluetooth Low Energy (BLE).
+
+This separation allows the drone to operate at long range while the Rx module bridges the data securely to the Flutter mobile application.
+
 ### Setup in Arduino IDE
 
 1. Open **Arduino IDE**.
