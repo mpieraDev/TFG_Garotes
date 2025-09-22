@@ -108,7 +108,7 @@ This architecture allows the mobile device to communicate indirectly with the dr
   - Nombre: **ArduinoBLE**.  
 
 
-### ⚙️ Setup in Arduino IDE
+### Setup in Arduino IDE
 
 1. **Install Arduino IDE**  
    - Download from the official website: [Arduino IDE](https://www.arduino.cc/en/software).  
