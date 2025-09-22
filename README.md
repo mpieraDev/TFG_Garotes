@@ -21,12 +21,11 @@ The developed system consists of three main components:
 The system enables operation in hard-to-reach areas with a range greater than **1 km** and an autonomy of **6 hours**.  
 Its electronic infrastructure is optimized to reduce investment, offering an efficient and economical alternative to conventional bathymetric methods.
 
+---
 
 # Installation
 
 This project contains two main parts: a **Flutter app** and an **Arduino firmware**.
-
----
 
 ## Flutter Part
 
@@ -73,7 +72,6 @@ flutter run
 * **iOS**: not tested yet.
 * **Android**: tested on real devices.
 
----
 
 ## Arduino Part
 
@@ -89,21 +87,3 @@ flutter run
 
 With this, you can compile and upload the firmware to the Arduino so it communicates with the Flutter app via Bluetooth.
 
----
-
-## Quick summary
-
-```bash
-# Flutter
-flutter --version
-flutter doctor
-git clone https://github.com/mpieraDev/TFG_Garotes.git
-cd TFG_Garotes/Flutter/demo_app
-flutter pub get
-flutter run   # on real mobile device (not emulator)
-
-# Arduino
-# - Install support for Arduino Nano RP2040 Connect in the IDE
-# - Install required libraries
-# - Upload the firmware
-```
