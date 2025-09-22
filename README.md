@@ -12,7 +12,7 @@ The developed system consists of three main components:
 
 The system enables operation in hard-to-reach areas with a range greater than 1 km and an autonomy of 6 hours, and its electronic infrastructure is optimized to reduce investment, offering an efficient and economical alternative to conventional bathymetric methods.
 
-## Instalation
+## Installation
 
 This project contains two main parts: a **Flutter app** and an **Arduino firmware**.
 
@@ -60,8 +60,8 @@ flutter run
 
 ### 5. Compatibility
 
-* **iOS**: tested on real devices.
-* **Android**: not tested yet.
+* **iOS**: not tested yet.
+* **Android**: tested on real devices.
 
 ---
 
