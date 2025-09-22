@@ -21,6 +21,7 @@ The developed system consists of three main components:
 The system enables operation in hard-to-reach areas with a range greater than **1 km** and an autonomy of **6 hours**.  
 Its electronic infrastructure is optimized to reduce investment, offering an efficient and economical alternative to conventional bathymetric methods.
 
+**LinkedIn Post:** https://www.linkedin.com/feed/update/urn:li:activity:7356992431638126592/
 
 # Installation
 
