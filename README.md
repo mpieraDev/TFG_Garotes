@@ -1,4 +1,4 @@
-# TFG_Garotes
+# TFG_Surface_Vehicle_for_bathymetric_surveys
 
 The project is situated within **Garotes**, an initiative by *Spascat* to generate bathymetric maps in hard-to-reach coastal areas using satellite-derived bathymetry algorithms.  
 To calibrate them, a small amount of real bathymetric data is needed. The challenge was that the company did not have its own method to collect this data autonomously, economically, and efficiently.
